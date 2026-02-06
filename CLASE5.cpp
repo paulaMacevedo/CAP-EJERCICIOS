@@ -52,3 +52,4 @@ int main(){
     // constructor move
     //A menudo constructir vacio ()
     // El destructor (Sólo su hay reservas con malloc/new o polimorfismo)
+    
