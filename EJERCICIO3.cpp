@@ -87,7 +87,6 @@ int v2(){
     double elapsed = (double)(t2 - t1) / CLOCKS_PER_SEC;
     printf("Tiempo int**: %f s\n", elapsed);
 }
-//kk
 int v3(){
     // version int * y gurando copia traspuestan antes de multiplicar
          srand(0);
