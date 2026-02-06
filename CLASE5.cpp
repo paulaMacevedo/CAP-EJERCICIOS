@@ -42,3 +42,13 @@ A[i]=B[i]+C[i]...
 int main(){
 
 }
+///////////////////////////////////////////////////7777
+// para inicializar el valor, en el constructor  :centro (centro), radio (Radio){}
+// inicializar tras los : es mñas rápido siempre que se pueda hacer
+// Siempre podemmos construir con lista de incialización{}
+// A menudo no haceb falta constructores
+// Si tenemos rederencias i oyberos entre los miembros de nuestra clase, hacen falta:
+    // constructor copia
+    // constructor move
+    //A menudo constructir vacio ()
+    // El destructor (Sólo su hay reservas con malloc/new o polimorfismo)
