@@ -75,7 +75,7 @@ int shortcats(){
     time_t t2 = clock();
 	double elapsed = (double)(t2-t1)/CLOCKS_PER_SEC;
 	printf("total: %g\n", elapsed);
-	printf("por elemento: %g\n", elapsed/nIter/nElem);
+	printf("por elemento: %g\n", elapsed/nIter/nElemen);
 
 }
 int main(){
