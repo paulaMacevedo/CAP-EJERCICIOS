@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+// IMPLEMENTA PRAGMA EN EL PRIMER EJERCICIO
 class nodo{
     public:
     int valor;
