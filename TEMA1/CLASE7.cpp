@@ -117,3 +117,16 @@ class puntoGen{
         coords[I] += v.coords[I];
     }
 }
+
+template <>
+void miPrint<int>(const float& cosa){
+    printf("%f", cosa);
+}
+template <int I....>
+constexpr int sumatorio(I...args)
+{
+    if constexpr (sizeof (I...)){
+        return 10+(sumatorio<I...>)();
+    }
+    return 10;
+}
