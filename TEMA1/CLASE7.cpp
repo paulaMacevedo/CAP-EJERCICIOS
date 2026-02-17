@@ -91,3 +91,29 @@ point3D centroide (std:: vector<point3D> puntos){
 
     return resultado;
 }
+
+// REPASO TEMPLATES
+template <typename T> // La clase o función de debajo utiliza una clase genérica (puede ser cualquiera)
+template <class T>
+template <int I> // LA clase o funcuón de debajo utiliza un genérico (puede ser cualquiera)
+template <int nCoords>
+class punto{
+    double coords[nCoords];
+}
+
+class puntoGen{
+    double * coords;
+    punto (int tam){
+        coords = new double[tam];
+    }
+
+    template <int I = nCoords -1>
+    vector operator+(const vector &v){
+        coords[I]+= v.coords[I];
+        return template operator+= <I+1>(v);
+    }
+    template<>
+    void operator+<nCoords -1>(const vector &v){
+        coords[I] += v.coords[I];
+    }
+}
